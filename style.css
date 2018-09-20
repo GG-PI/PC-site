@@ -1,0 +1,100 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 1rem;
+}
+
+.landing-page {
+	overflow: hidden;
+}
+
+.landing-page img {
+	width: calc(100vw - 3rem);
+	height: calc(50vw - 3rem);
+}
+
+.landing-page p {
+	padding: 0 .5rem;
+}
+
+.landing-page h1 {
+	font-size: 4em;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 0 .5rem;
+}
+
+.the-build {
+	position: relative;
+}
+
+.the-build h3 {
+	font-size: 2em;
+	text-align: center;
+	padding: 0 .5rem;
+}
+
+.repairs h2 {
+	font-size: 3em;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.repairs h3 {
+	font-size: 2em;
+	margin: 0;
+}
+
+.container {
+	display: flex;
+	overflow: hidden;
+	margin: 1rem 0;
+}
+
+.column {
+	position: relative;
+    padding: 10px;
+}
+
+.column img {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.container:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.monitors h2 {
+	font-size: 3em;
+	text-transform: uppercase;
+	padding-left: 2em;
+}
+
+.monitors h5 {
+	font-size: 2em;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.monitors img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.vertical-text {
+	display: block;
+	writing-mode: tb-rl;
+	margin: 0;
+}
+
+.center {
+	flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}

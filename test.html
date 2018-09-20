@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Test</title>
+		<style>
+		body {
+			background-color: black;
+		}
+		.left {
+			width: 150px;
+    height: 300px;
+    margin: 0 25px 0 0;
+    float: left;
+    -webkit-clip-path: polygon(0% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%);
+    -webkit-shape-outside: polygon(0% 0%, 0% 100%, 100% 100%);
+    shape-outside: polygon(calc(0% + 25px) 0%, calc(0% + 25px) 100%, 100% 100%);
+    background-color: black;
+		}
+
+		.right {
+			width: 150px;
+    height: 300px;
+    margin: 0 0 0 25px;
+    float: right;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+    -webkit-shape-outside: polygon(0% 0%, 100% 0%, 100% 100%);
+    shape-outside: polygon(0% 0%, 100% 0%, calc(100% - 25px) 100%);
+    background-color: black;
+		}
+
+		.text {
+			z-index: 0;
+			color: green;
+			background-color: darkgray;
+			padding: 1rem;
+		}
+		
+		</style>
+		
+	</head>
+
+	<body>
+		
+		<div class="left"></div>
+		<div class="right"></div>
+		<p class="text">
+			Nunc sodales dui at velit dictum, eget facilisis justo consequat. Pellentesque suscipit convallis quam, id congue enim fringilla vulputate. In gravida pulvinar dolor, at scelerisque dui hendrerit at. Fusce ultricies eget est quis venenatis. Donec ut ante vehicula mauris tristique molestie. Curabitur elit tortor, semper non nunc sit amet, mattis consectetur sem. Phasellus lacus orci, blandit eu varius quis, sagittis et sapien. Sed consequat elementum dictum. In fringilla sit amet sapien at interdum. Ut consectetur fringilla lectus non porttitor. Fusce convallis sapien purus. Nullam vitae venenatis lectus.
+		</p>
+	
+	</body>
+
+</html>
