@@ -6,6 +6,34 @@ body {
 	margin: 1rem;
 }
 
+h1 {
+	font-size: 4em;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+h2 {
+	font-size: 3em;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+h3 {
+	font-size: 2em;
+	margin: 0;
+}
+
+h4 {
+	font-size: 2em;
+	margin: 0;
+}
+
+h5 {
+	font-size: 1.5em;
+	text-transform: uppercase;
+	margin: 0;
+}
+
 .landing-page {
 	overflow: hidden;
 }
@@ -19,59 +47,30 @@ body {
 	padding: 0 .5rem;
 }
 
-.landing-page h1 {
-	font-size: 4em;
-	text-transform: uppercase;
-	text-align: center;
-	padding: 0 .5rem;
-}
-
 .the-build {
 	position: relative;
 }
 
-.the-build h3 {
-	font-size: 2em;
-	text-align: center;
-	padding: 0 .5rem;
+.left-img {
+	width: 40%;
+	float: left;
+	margin: 0 1.5rem 1rem 0;
 }
 
-.repairs h2 {
-	font-size: 3em;
-	text-transform: uppercase;
-	text-align: center;
-}
-
-.repairs h3 {
-	font-size: 2em;
-	margin: 0;
+.right-img {
+	max-height: 100%;
+	max-width: 40%;
+	float: right;
+	margin: 0 0 1rem 1.5rem;
 }
 
 .container {
-	display: flex;
 	overflow: hidden;
 	margin: 1rem 0;
 }
 
-.column {
-	position: relative;
-    padding: 10px;
-}
-
-.column img {
-	max-height: 100%;
-	max-width: 100%;
-}
-
-.container:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
 .monitors h2 {
-	font-size: 3em;
-	text-transform: uppercase;
+	text-align: left;
 	padding-left: 2em;
 }
 
@@ -82,7 +81,7 @@ body {
 }
 
 .monitors img {
-	max-width: 100%;
+	max-width: calc(100% - 5.5rem);
 	max-height: 100%;
 }
 
@@ -90,11 +89,34 @@ body {
 	display: block;
 	writing-mode: tb-rl;
 	margin: 0;
+	padding-top: 2rem;
 }
 
 .center {
+	display: flex;
 	flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+}
+
+.tcenter {
+	text-align: center;
+}
+
+img {
+	border-radius: 15px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fright {
+	float: right;
+}
+
+.inline {
+	display: inline-block;
+}
+
+.uline {
+	text-decoration: underline;
 }
